@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "woocanvas/related-products",
+  "title": "Related Products",
+  "category": "woocanvas",
+  "description": "Displays the WooCommerce related products and upsells grid.",
+  "icon": "grid-view",
+  "keywords": ["woocommerce", "product", "related", "upsells"],
+  "attributes": {
+    "columns": { "type": "number", "default": 4 },
+    "buttonColor": { "type": "string", "default": "" },
+    "buttonTextColor": { "type": "string", "default": "" }
+  },
+  "supports": {
+    "html": false,
+    "spacing": { "margin": true, "padding": true },
+    "color": false,
+    "border": { "radius": true, "width": true, "style": true, "color": true }
+  },
+  "editorScript": "woocanvas-related-products-editor",
+  "render": "file:./render.php"
+}

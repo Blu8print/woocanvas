@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "woocanvas/product-tabs",
+  "title": "Product Tabs",
+  "category": "woocanvas",
+  "description": "Displays the WooCommerce product data tabs: description, additional information, and reviews.",
+  "icon": "list-view",
+  "keywords": ["woocommerce", "product", "tabs", "description", "reviews"],
+  "attributes": {
+    "tabStyle":     { "type": "string",  "default": "default" },
+    "activeColor":  { "type": "string",  "default": "" },
+    "tabAlignment": { "type": "string",  "default": "left" },
+    "showReviews":  { "type": "boolean", "default": true }
+  },
+  "supports": {
+    "html": false,
+    "spacing": { "margin": true, "padding": true },
+    "border": { "radius": true, "width": true, "style": true, "color": true }
+  },
+  "editorScript": "woocanvas-product-tabs-editor",
+  "render": "file:./render.php"
+}

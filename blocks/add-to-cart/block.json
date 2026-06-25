@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "woocanvas/add-to-cart",
+  "title": "Add to Cart",
+  "category": "woocanvas",
+  "description": "Displays the WooCommerce add to cart form including quantity, variations, and the cart button.",
+  "icon": "cart",
+  "keywords": ["woocommerce", "product", "cart", "buy", "variations"],
+  "attributes": {
+    "layout": { "type": "string", "default": "row" },
+    "buttonColor": { "type": "string", "default": "" },
+    "buttonTextColor": { "type": "string", "default": "" }
+  },
+  "supports": {
+    "html": false,
+    "spacing": { "margin": true, "padding": true },
+    "color": false,
+    "border": { "radius": true, "width": true, "style": true, "color": true }
+  },
+  "editorScript": "woocanvas-add-to-cart-editor",
+  "render": "file:./render.php"
+}

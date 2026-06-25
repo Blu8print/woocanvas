@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "woocanvas/product-gallery",
+  "title": "Product Gallery",
+  "category": "woocanvas",
+  "description": "Displays the WooCommerce product image gallery with thumbnails.",
+  "icon": "format-gallery",
+  "keywords": ["woocommerce", "product", "gallery", "image"],
+  "attributes": {
+    "maxWidth": { "type": "string", "default": "" },
+    "aspectRatio": { "type": "string", "default": "natural" },
+    "thumbnailPosition": { "type": "string", "default": "below" }
+  },
+  "supports": {
+    "html": false,
+    "spacing": { "margin": true, "padding": true },
+    "color": false,
+    "border": { "radius": true, "width": true, "style": true, "color": true }
+  },
+  "editorScript": "woocanvas-product-gallery-editor",
+  "render": "file:./render.php"
+}
